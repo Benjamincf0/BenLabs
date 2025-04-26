@@ -1,0 +1,46 @@
+/* smoky gradient button */
+.smoke-btn {
+    position: relative;
+    padding: 0.75rem 2.5rem;
+    border-radius: 1rem;
+    color: #fff;
+    overflow: hidden;
+    isolation: isolate;          /* keeps smoke inside */
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.08);
+  }
+  
+  .smoke-btn::before,
+  .smoke-btn::after {
+    content: '';
+    position: absolute;
+    width: 180%;
+    height: 180%;
+    top: -40%;
+    left: -40%;
+    background: radial-gradient(circle at 30% 30%, #ff6acb 0%, transparent 60%),
+                radial-gradient(circle at 70% 70%, #9b5cff 0%, transparent 60%);
+    filter: blur(45px);
+    animation: smoke 8s linear infinite;
+    opacity: 0.9;
+  }
+  
+  /* second layer moves slower for depth */
+  .smoke-btn::after {
+    animation-duration: 12s;
+    opacity: 0.7;
+  }
+  
+  @keyframes smoke {
+    0%   { transform: translate(0,0) rotate(0deg);   }
+    50%  { transform: translate(20%, -10%) rotate(45deg); }
+    100% { transform: translate(0,0) rotate(90deg); }
+  }
+  
+  /* subtle scale on hover / focus */
+  .smoke-btn:hover,
+  .smoke-btn:focus-visible {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+  }
+  

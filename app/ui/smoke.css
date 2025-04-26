@@ -1,0 +1,40 @@
+/* button shell */
+.smoke-btn {
+  position: relative;
+  padding: 0.75rem 2.5rem;
+  border-radius: 1rem;
+  color: #fff;
+  overflow: hidden;
+  isolation: isolate;
+  backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.06);
+  transition: transform 0.25s;
+}
+.smoke-btn:hover { transform: scale(1.05); }
+
+/* shared blob shape */
+.blob {
+  position: absolute;
+  top: var(--my,50%);
+  left: var(--mx,50%);
+  width: 220%;
+  height: 220%;
+  transform: translate(-50%, -50%);
+  border-radius: 45%;
+  filter: blur(60px);
+  mix-blend-mode: screen;   /* smoke mixes the colours */
+  pointer-events: none;
+  animation: drift 14s linear infinite alternate;
+}
+
+/* pink & purple variants */
+.blob.pink   { background: #ff6acb; opacity: 0.55; }
+.blob.purple { background: #9b5cff; opacity: 0.55; }
+.blob.delay  { animation-delay: 4s; }
+
+/* slow drifting motion */
+@keyframes drift {
+  0%   { transform: translate(-50%, -50%) scale(1)    rotate(0);   }
+  50%  { transform: translate(-40%, -60%) scale(1.25) rotate(60deg); }
+  100% { transform: translate(-50%, -50%) scale(1.1)  rotate(120deg); }
+}

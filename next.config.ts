@@ -1,7 +1,5 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig = {
+  // Removed invalid `turbopack` configuration.
 };
 
-export default nextConfig;
+module.exports = nextConfig;

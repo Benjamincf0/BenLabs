@@ -1,0 +1,11 @@
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.typingCursor::after {
+  content: '▏'; /* Custom cursor */
+  animation: blink 0.75s step-start infinite;
+  position: absolute;
+}

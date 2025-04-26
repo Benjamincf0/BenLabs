@@ -1,24 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Benlab
 
-## Getting Started
+Welcome to Benlab, a Next.js 14 project featuring a 3D world built with Three.js and React Three Fiber.
 
-First, run the development server:
+## Setup Instructions
+
+1. Install dependencies:
+   ```bash
+   pnpm install
+   ```
+
+2. Run the development server:
+   ```bash
+   pnpm dev
+   ```
+
+3. Open your browser and navigate to `http://localhost:3000`.
+
+## Adding Scenes to `/world`
+
+To add new scenes to the `/world` page:
+
+1. Open the `WorldCanvas` component located in `components/WorldCanvas.tsx`.
+2. Add your Three.js objects or animations inside the `<Canvas>` component.
+3. Use React Three Fiber hooks like `useFrame` to animate objects.
+
+## Testing
+
+Run Playwright tests to ensure the application works as expected:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm playwright test
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
 
