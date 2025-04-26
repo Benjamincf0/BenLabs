@@ -74,8 +74,19 @@ export default function Hero() {
           transition={{ delay: 0.6, duration: 0.5 }}
           className="absolute bottom-10 flex w-full flex-col items-center"
         >
-          <p className="text-sm tracking-wide shiny-pink">Scroll down to discover my projects</p>
-          <ChevronDoubleDownIcon className="mt-2 h-6 w-6 text-pink-300" />
+          <p className="text-sm tracking-wide shiny-pink">Scroll down to discover more!</p>
+          <motion.div
+            animate={{
+              y: [0, 10, 0], // Keyframes for up and down motion
+            }}
+            transition={{
+              duration: 2, // Duration of one cycle
+              repeat: Infinity, // Repeat forever
+              ease: "easeInOut", // Smooth easing
+            }}
+          >
+            <ChevronDoubleDownIcon className="mt-2 h-6 w-6 text-pink-300" />
+          </motion.div>
         </motion.div>
       )}
     </div>
