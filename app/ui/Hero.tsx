@@ -40,12 +40,12 @@ export default function Hero() {
       </motion.div>
 
       {/* Button appears after typing */}
-      {textFinished && (
+      
         <motion.button
           aria-label="Enter Ben's 3D world"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ delay: 0.7 , duration: 0.6 }}
           onMouseEnter={() => boostRate(2.5)}
           onMouseLeave={() => boostRate(1)}
           onClick={() => router.push("/world")}
@@ -64,7 +64,7 @@ export default function Hero() {
           />
           <span className="relative z-10 text-lg md:text-xl">Enter 3D World</span>
         </motion.button>
-      )}
+      
 
       {/* Chevron prompt */}
       {textFinished && (
@@ -74,7 +74,7 @@ export default function Hero() {
           transition={{ delay: 0.6, duration: 0.5 }}
           className="absolute bottom-10 flex w-full flex-col items-center"
         >
-          <p className="text-sm tracking-wide text-pink-200">Scroll down to discover my projects</p>
+          <p className="text-sm tracking-wide shiny-pink">Scroll down to discover my projects</p>
           <ChevronDoubleDownIcon className="mt-2 h-6 w-6 text-pink-300" />
         </motion.div>
       )}
