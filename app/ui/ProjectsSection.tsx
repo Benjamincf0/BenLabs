@@ -11,10 +11,19 @@ const projects = [
 ];
 
 export default function ProjectsSection({ className }: { className?: string }) {
+  const refs = projects.map(() => useInView({ triggerOnce: true })); // Create refs for each project
+
   return (
     <section className={`${className}`}>
+      <div className="max-w-4xl mx-auto text-center">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-8">My Projects</h1>
+        <p className="text-lg md:text-xl text-gray-400 mb-12">
+          A showcase of my technical expertise and proficiency.
+        </p>
+      </div>
+
       {projects.map((project, index) => {
-        const { ref, inView } = useInView();
+        const { ref, inView } = refs[index]; // Access the ref and inView for the current project
 
         return (
           <motion.div
@@ -37,7 +46,7 @@ export default function ProjectsSection({ className }: { className?: string }) {
                   />
                 )}
               </h2>
-              <hr className="border-pink-300 mb-4" /> {/* Changed to light pink */}
+              <hr className="border-pink-300 mb-4" />
               <p>{project.description}</p>
             </div>
             <div className="w-1/2 p-6">
