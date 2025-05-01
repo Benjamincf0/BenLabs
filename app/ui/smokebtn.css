@@ -1,11 +1,11 @@
-/* smoky gradient button */
+/* smoky gradient button
 .smoke-btn {
     position: relative;
     padding: 0.75rem 2.5rem;
     border-radius: 1rem;
     color: #fff;
     overflow: hidden;
-    isolation: isolate;          /* keeps smoke inside */
+    isolation: isolate;
     backdrop-filter: blur(12px);
     background: rgba(255, 255, 255, 0.08);
   }
@@ -25,7 +25,6 @@
     opacity: 0.9;
   }
   
-  /* second layer moves slower for depth */
   .smoke-btn::after {
     animation-duration: 12s;
     opacity: 0.7;
@@ -37,10 +36,9 @@
     100% { transform: translate(0,0) rotate(90deg); }
   }
   
-  /* subtle scale on hover / focus */
   .smoke-btn:hover,
   .smoke-btn:focus-visible {
     transform: scale(1.05);
     transition: transform 0.2s;
   }
-  
+   */

@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -43,7 +47,7 @@ body {
   }
 }
 
-.shiny-effect {
+/* .shiny-effect {
   position: relative;
   display: inline-block;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
@@ -51,7 +55,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shiny 2s linear infinite;
-}
+} */
 
 .shiny-icon {
   position: relative;
@@ -67,4 +71,19 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shiny-pink 2s linear infinite;
+}
+
+.animate-gradient-x {
+  background-size: 400% 400%;
+  animation: shiny-gradient 3s linear infinite;
+}
+
+
+@keyframes shiny-gradient {
+  0% {
+    background-position: 400% 90%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

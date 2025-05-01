@@ -36,7 +36,7 @@ export default function Navbar() {
     <nav
       className={clsx(
         'fixed inset-x-0 top-0 z-50 flex h-16 items-center justify-between px-4 md:px-6 transition-colors duration-300',
-        scrolled ? 'bg-white/30 backdrop-blur-lg' : 'bg-transparent'
+        scrolled ? 'bg-blue-950/60 backdrop-blur-lg' : 'bg-transparent'
       )}
     >
       {/* hamburger */}

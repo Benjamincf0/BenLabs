@@ -3,7 +3,7 @@
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 
-const WorldCanvas = dynamic(() => import('../ui/WorldCanvas'), { ssr: false });
+const WorldCanvas = dynamic(() => import('../ui/world/WorldCanvas'), { ssr: false });
 
 export default function WorldPage() {
   return (

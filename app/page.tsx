@@ -1,10 +1,11 @@
 'use client';
 
-import ProjectsSection from './ui/ProjectsSection';
-import InternshipSection from './ui/InternshipSection';
-import Footer from './ui/Footer';
-import Hero from './ui/Hero';
-import BioSection from './ui/BioSection';
+import ProjectsSection from '@/app/ui/ProjectsSection';
+import InternshipSection from '@/app/ui/InternshipSection';
+import Footer from '@/app/ui/Footer';
+import Hero from '@/app/ui/Hero/Hero';
+import BioSection from '@/app/ui/BioSection';
+import SkillsSection from '@/app/ui/SkillsSection';
 
 export default function HomePage() {
 
@@ -16,8 +17,10 @@ export default function HomePage() {
       {/* Bio Section */}
       <BioSection />
 
+      <SkillsSection/>
+
       {/* Projects Section */}
-      <ProjectsSection />
+      <ProjectsSection className='pt-10' />
 
       {/* Internship Section */}
       <InternshipSection />
