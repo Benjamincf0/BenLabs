@@ -11,7 +11,8 @@ const projects = [
 ];
 
 export default function ProjectsSection({ className }: { className?: string }) {
-  const refs = projects.map(() => useInView({ triggerOnce: true })); // Create refs for each project
+  // Create refs for each project at the top level
+  const refs = projects.map(() => useInView({ triggerOnce: true }));
 
   return (
     <section className={`${className}`}>
@@ -29,8 +30,7 @@ export default function ProjectsSection({ className }: { className?: string }) {
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
             className={`flex ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-center mb-20`}
           >

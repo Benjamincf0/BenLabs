@@ -2,7 +2,7 @@
 
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import { useRef } from 'react';
+// import { useRef } from 'react';
 
 export default function WorldCanvasContent() {
   // const torusKnotRef = useRef<any>(null);

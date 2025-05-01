@@ -27,7 +27,7 @@ const BioSection = () => {
                     wrapper="span"
                   /></h2>
           <p className="text-lg md:text-xl leading-relaxed">
-            My name is Benjamin. I'm a software engineering COOP student at McGill University. This website is meant to showcase some of my skills and experience. Look around. I'm always keen on learning more and I'd love to learn more about you! <strong>Feel free to reach out</strong>.
+            My name is Benjamin. I&apos;m a software engineering COOP student at McGill University. This website is meant to showcase some of my skills and experience. Look around. I&apos;m always keen on learning more and I&apos;d love to learn more about you! <strong>Feel free to reach out</strong>.
           </p>
         </div>
       </div>

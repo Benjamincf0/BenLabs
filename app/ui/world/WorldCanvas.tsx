@@ -2,26 +2,26 @@
 
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import { useRef } from 'react';
-import { useFrame } from '@react-three/fiber';
+// import { useRef } from 'react';
+// import { useFrame } from '@react-three/fiber';
 
-function TorusKnot() {
-  // const meshRef = useRef();
+// function TorusKnot() {
+//   // const meshRef = useRef();
 
-  // useFrame(() => {
-  //   if (meshRef.current) {
-  //     meshRef.current.rotation.x += 0.01;
-  //     meshRef.current.rotation.y += 0.01;
-  //   }
-  // });
+//   // useFrame(() => {
+//   //   if (meshRef.current) {
+//   //     meshRef.current.rotation.x += 0.01;
+//   //     meshRef.current.rotation.y += 0.01;
+//   //   }
+//   // });
 
-  // return (
-  //   <mesh ref={meshRef}>
-  //     <torusKnotGeometry args={[1, 0.4, 128, 32]} />
-  //     <meshStandardMaterial color="hotpink" />
-  //   </mesh>
-  // );
-}
+//   // return (
+//   //   <mesh ref={meshRef}>
+//   //     <torusKnotGeometry args={[1, 0.4, 128, 32]} />
+//   //     <meshStandardMaterial color="hotpink" />
+//   //   </mesh>
+//   // );
+// }
 
 export default function WorldCanvas() {
   return (
