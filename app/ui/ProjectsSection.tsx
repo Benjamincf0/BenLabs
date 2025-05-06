@@ -1,28 +1,15 @@
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import { useInView } from 'react-intersection-observer';
+import { Project, ProjectItemProps, ProjectsSectionProps } from '@/app/lib/definitions';
 
-type Project = {
-  title: string;
-  description: string;
-  image: string;
-};
-
-type ProjectItemProps = {
-  project: Project;
-  index: number;
-};
-
-type ProjectsSectionProps = {
-  className?: string;
-};
 
 const projects: Project[] = [
-  { title: 'Pendulum Simulator', description: 'This project took me a year to build and it was super fun to build. I learned so many new skills.', image: '/globe.svg' },
-  { title: 'WebChat', description: 'This project took me a year to build and it was super fun to build. I learned so many new skills.', image: '/window.svg' },
-  { title: 'ArduCar', description: 'This project took me a year to build and it was super fun to build. I learned so many new skills.', image: '/next.svg' },
-  { title: 'Project Name 3', description: 'This project took me a year to build and it was super fun to build. I learned so many new skills.', image: '/vercel.svg' },
-  { title: 'Project Name 4', description: 'This project took me a year to build and it was super fun to build. I learned so many new skills.', image: '/file.svg' },
+  { title: 'Pendulum Simulator', description: 'This project took me a year to build and it was super fun to build. I learned so many new skills.', image: '/projects/physics.jpeg' },
+  { title: 'WebChat', description: 'This project took me a year to build and it was super fun to build. I learned so many new skills.', image: '/projects/webchat.png' },
+  { title: 'ArduCar', description: 'This project took me a year to build and it was super fun to build. I learned so many new skills.', image: '/projects/arducar.png' },
+  // { title: 'Project Name 3', description: 'This project took me a year to build and it was super fun to build. I learned so many new skills.', image: '/vercel.svg' },
+  // { title: 'Project Name 4', description: 'This project took me a year to build and it was super fun to build. I learned so many new skills.', image: '/file.svg' },
 ];
 
 function ProjectItem({ project, index }: ProjectItemProps) {
