@@ -49,7 +49,7 @@ export default function Hero() {
   return (
     <div
       ref={heroRef} // Attach ref to Hero component
-className="relative flex h-[100vh] flex-col items-center justify-center"
+className="relative w-full h-[calc(100vh-4rem)] flex flex-col items-center justify-center"
 >
       {/* Title */}
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>

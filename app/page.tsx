@@ -10,7 +10,7 @@ import SkillsSection from '@/app/ui/SkillsSection';
 export default function HomePage() {
 
   return (
-    <main className="bg-[#0d1117] text-white min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
+    <div className="flex-1 min-h-screen text-white flex flex-col">
       {/* Hero Section */}
       <Hero />
 
@@ -27,6 +27,6 @@ export default function HomePage() {
 
       {/* Footer */}
       <Footer />
-    </main>
+    </div>
   );
 }

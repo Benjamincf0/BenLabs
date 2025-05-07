@@ -1,6 +1,6 @@
 export default function InternshipSection() {
   return (
-    <section className="bg-gray-800 text-white py-12 px-6 text-center w-full">
+    <section id="connect" className="bg-gray-800 text-white py-12 px-6 text-center w-full">
       <h2 className="text-3xl font-bold mb-6">Looking for an intern? Look no further.</h2>
       <form className="max-w-lg mx-auto space-y-4" onSubmit={(e) => {handleSumbit(e)}}>
         <input

@@ -17,7 +17,7 @@ export default function SkillsSection() {
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-8">My Skills</h1>
         <p className="text-lg md:text-xl text-gray-400 mb-12">
-          Which one do you think I should focus on next? Click on one to vote
+          I'm continuously improving!
         </p>
       </div>
 
@@ -28,7 +28,7 @@ export default function SkillsSection() {
             className={`group relative p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 ${li.color}`}
           >
             <div className="flex items-center mb-4">
-              <img src={li.icon} alt={`${li.name} icon`} className="w-10 h-10 mr-4" />
+              <img src={"/skill_icons" + li.icon} alt={`${li.name} icon`} className="w-10 h-10 mr-4" />
               <h2 className="text-xl font-bold">{li.name}</h2>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-4">

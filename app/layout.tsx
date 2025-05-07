@@ -12,13 +12,15 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="dark h-full">
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={`${inter.variable} ${jetBrainsMono.variable} font-sans`}>
-        <Navbar />
-        {children}
+        <div className="bg-[#0d1117] h-full flex flex-col">
+          <Navbar />
+          <main className="pt-16 flex-1 flex flex-col min-h-screen">{children}</main>
+        </div>
       </body>
     </html>
   );
