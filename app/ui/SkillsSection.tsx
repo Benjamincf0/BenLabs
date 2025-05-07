@@ -17,7 +17,7 @@ export default function SkillsSection() {
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-8">My Skills</h1>
         <p className="text-lg md:text-xl text-gray-400 mb-12">
-          I'm continuously improving!
+          I&apos;m continuously improving!
         </p>
       </div>
 
